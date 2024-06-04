@@ -1,0 +1,61 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+.swim-lanes {
+  min-height: 60vh;
+}
+
+.card {
+  margin: 0 auto;
+  margin-bottom: 4px;
+  border-radius: 15px;
+  
+}
+.card-body {
+  border-radius: 15px;
+}
+
+.card-subtitle {
+  margin-top:5px;
+}
+
+.card-title {
+  filter: brightness(90%);
+  padding: 12px;
+  border-top-left-radius: 12px; 
+  border-top-right-radius: 12px;
+}
+
+.card:hover {
+  cursor: grab;
+}
+
+.card-late * {
+  background: rgb(171, 67, 67);
+  color: white;
+}
+
+.card-good * {
+  background-color: white;
+  color: black;
+}
+
+.card-warn * {
+  background-color: rgb(230, 218, 86);
+  color:white;
+}
+
+
+#todo-cards, #in-progress-cards, #done-cards, .card-body{
+  height:100%;
+}
+
+.btn-delete {
+  color:white;
+  background-color: red;
+  margin: 3px;
+  width: 50%;
+  align-self: center;
+}
