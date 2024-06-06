@@ -68,6 +68,7 @@ export function createEntry(posting) {
   }
 }
 
+// Removes task
 
 export function deleteEntry(id) {
   if (!id || !getEntry(id)) return false;

@@ -13,7 +13,7 @@ import {
 } from "./taskStore.js";
 
 
-
+// Creates different sections to orginize tasks
 const lane = {
   TODOID: "todo-cards",
   WIPID: "in-progress-cards",
@@ -25,7 +25,7 @@ statusLane[lane.TODOID] = STATEVAL.TODO;
 statusLane[lane.WIPID] = STATEVAL.WIP;
 statusLane[lane.DONEID] = STATEVAL.COMPLETE;
 
-
+//Gives cards color depending on due date
 const cardColoring = {
   LATE: "card-late",
   WARN: "card-warn",
@@ -173,6 +173,7 @@ function handleDeleteTask(event) {
   $(`#${id}`).remove();
 }
 
+//Makes sure the entered task meets all the criteria
 function isAccepted(target, taskId) {
   if (!target || !taskId) return false;
 
